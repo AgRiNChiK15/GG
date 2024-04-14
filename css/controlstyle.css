@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+  }
+  body {
+    font-family: "Franklin Gothic Medium";
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  .header_top {
+    opacity: 0.9;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../image/header_top.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+  }
+  .top_inner {
+    font-family: "Franklin Gothic Medium";
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top_title {
+    font-size: 40px;
+  }
+  .top_list {
+    display: flex;
+  }
+  .rank,
+  .unic {
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+    padding: 30px 0;
+  }
+  .top_rank,
+  .top_unic,
+  .site_map {
+    position: relative;
+  }
+  .rank_list,
+  .uni_list,
+  .map_list {
+    display: none;
+    position: absolute;
+    top: 32px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgb(224, 87, 87);
+    opacity: 0.9;
+  }
+  .map_list {
+    width: 120px;
+    display: none;
+  }
+  .rank_list {
+    left: 10px;
+    width: 120px;
+    height: 60px;
+  }
+  .uni_list {
+    left: 40px;
+    width: 120px;
+    height: 60px;
+  }
+  .top_rank:hover .rank_list,
+  .top_unic:hover .uni_list,
+  .site_map:hover .map_list {
+    display: block;
+  }
+  .top_link {
+    text-decoration: none;
+    color: rgb(15, 4, 27);
+  }
+  .top_line {
+    margin: 5px auto;
+    width: 40px;
+    height: 0.5px;
+    background-color: rgb(128, 128, 128);
+  }
+  .bottom_line {
+    margin: 3px 25px 3px 25px;
+    width: 40px;
+    background-color: rgb(128, 128, 128);
+  }
+  .header_bottom {
+    margin-top: 60px;
+    height: 100vh;
+    background-image: url(../image/perviy.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+  }
+  .media_img {
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+    top: 60px;
+  }
+  .header_form {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    padding: 170px 30px;
+  }
+  .form_block {
+    position: relative;
+  }
+  .header_input {
+    padding: 5px;
+    background-color: transparent;
+    margin-bottom: 7px;
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 2px;
+  }
+  .nick {
+    display: block;
+    width: 210px;
+    color: rgb(0, 255, 0);
+    margin-bottom: 20px;
+  }
+  .form_block::before {
+    content: "Пароль:";
+    position: absolute;
+    top: -20px;
+    color: rgb(0, 255, 0);
+    text-shadow: 1px 2px 1px black;
+    font-size: 16px;
+  }
+  .form_block::after {
+    content: "Логин:";
+    top: 28px;
+    position: absolute;
+    color: rgb(0, 255, 0);
+    text-shadow: 1px 2px 1px black;
+    font-size: 16px;
+  }
+  .mail_block {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mail {
+    display: block;
+    width: 120px;
+    margin-right: 5px;
+    color: rgb(0, 255, 0);
+  }
+  select {
+    width: 85px;
+    height: 27px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 0);
+    color: white;
+    border-radius: 2px;
+  }
+  option {
+    background-color: gray;
+  }
+  .header_form_link {
+    margin: 0 auto;
+    width: 120px;
+    text-align: center;
+    padding: 3px 5px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 2px;
+    text-shadow: 2px 1px 1px black;
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  .nick::placeholder,
+  .mail::placeholder {
+    color: white;
+    text-shadow: 2px 1px 1px black;
+  }
+  .title_box {
+    text-shadow: 2px 2px 1px #000;
+    text-align: center;
+    width: 600px;
+    margin: -170px auto;
+  }
+  .bottom_title {
+    font-size: 90px;
+  }
+  .title_line {
+    margin: 25px 0px 25px 100px;
+    width: 400px;
+    height: 1px;
+    background-color: gainsboro;
+  }
+  .bottom_description {
+    font-size: 40px;
+  }
+  .biography {
+    background-image: url(../image/kino.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+  }
+  .biography_paragragh {
+    max-width: 600px;
+  }
+  .biography_info {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 1px 5px black;
+    font-style: italic;
+    color: #f5f5dc;
+    margin-bottom: 70px;
+  }
+  .hint {
+    display: inline-block;
+    position: relative;
+  }
+  .hint_info {
+    border-radius: 7px;
+    text-align: center;
+    font-style: italic;
+    width: 250px;
+    display: none;
+  }
+  .hint:hover .hint_info {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    padding: 5px;
+    background-color: gray;
+    opacity: 0.95;
+  }
+  .biography_left,
+  .Science_left {
+    width: 500px;
+    margin-right: 150px;
+  }
+  .biographylogo,
+  .Sciencelogo {
+    width: 500px;
+    border-radius: 5px;
+  }
+  .biography_info_line,
+  .biography_info_lines {
+    width: 400px;
+    margin: 15px auto;
+    background-color: #f5f5dc;
+  }
+  .biography_info_lines {
+    margin-bottom: 70px;
+  }
+  .left_line {
+    width: 300px;
+    margin: 20px auto;
+  }
+  video {
+    border-radius: 5px;
+    display: block;
+    width: 500px;
+    height: 280px;
+  }
+  .biography_inner,
+  .Science_inner {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .biography_right,
+  .Science_right {
+    font-size: 20px;
+    text-shadow: 2px 2px 1px DarkSlateGray;
+    color: #f5f5dc;
+  }
+  .right_title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .biography_link {
+    text-decoration: none;
+    color: #ffdead;
+  }
+  .word {
+    color: #deb887;
+  }
+  
+  .biography_paragraph {
+    margin: 20px 0px;
+  }
+  .best_uni {
+    display: flex;
+  }
+  .box_image {
+    display: flex;
+    margin-left: 50px;
+    width: 500px;
+  }
+  .Science {
+    background-image: url(../image/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+  }
+  .Science_paragragh {
+    width: 600px;
+  }
+  .two {
+    margin: 20px 0px;
+  }
+  .year_up {
+    display: flex;
+  }
+  .year {
+    background-image: url(../image/fon3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    color: #f5f5dc;
+  }
+  .year_title {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  table {
+    width: 300px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 5px;
+  }
+  th {
+    font-size: 24px;
+  }
+  .left {
+    margin-right: 50px;
+  }
+  .left_info {
+    max-width: 250px;
+    margin-right: 25px;
+    align-self: center;
+  }
+  .vertical_line {
+    width: 1px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    margin-right: 24px;
+    align-self: center;
+  }
+  .right_info {
+    max-width: 250px;
+    margin-right: 25px;
+    align-self: center;
+  }
+  .year_line {
+    margin: 50px auto;
+    width: 700px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+  }
+  .rank_name {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .year_left,
+  .year_right {
+    display: flex;
+    justify-content: space-between;
+  }
+  .paragraph_info {
+    text-shadow: 2px 2px 1px DarkSlateGray;
+  }
+  .year_bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .year_paragraph {
+    width: 600px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-shadow: 2px 1px 1px DarkSlateGray;
+  }
+  
+  .vallidation_form {
+    border-radius: 5px;
+    width: 400px;
+  }
+  .form_cell {
+    margin-bottom: 10px;
+  }
+  .form_error {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    display: none;
+  }
+  .vallidation_input {
+    background-color: rgba(148, 0, 211, 0.1);
+    outline: none;
+    display: block;
+    width: 350px;
+    border-radius: 3px;
+    padding: 10px;
+    border: 2px solid rgb(0, 169, 211);
+    color: burlywood;
+  }
+  .vallidation_input:focus {
+    transform: scale(1.05);
+  }
+  .vallidation_button:active {
+    transform: scale(1.02);
+  }
+  
+  .vallidation_textarea {
+    background-color: rgba(148, 0, 211, 0.1);
+    width: 350px;
+    height: 70px;
+    resize: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px;
+    border: 2px solid rgb(0, 211, 193);
+    color: rgb(236, 11, 11);
+  }
+  .vallidation_textarea::placeholder,
+  .vallidation_input::placeholder {
+    color: rgb(241, 8, 8);
+  }
+  .vallidation_button {
+    width: 350px;
+    padding: 10px 0px;
+    border-radius: 3px;
+    border: 2px solid DarkViolet;
+    background-color: rgba(148, 0, 211, 0.1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 12px;
+  }
+  
+  .vallidation_input:valid:not(:placeholder-shown) {
+    background-color: rgba(0, 255, 0, 0.2);
+  }
+  
+  .vallidation_input:invalid:not(:placeholder-shown) {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  .vallidation_input:invalid:not(:placeholder-shown) + .form_error {
+    display: block;
+  }
+  .footer {
+    padding: 60px 0px;
+    background-image: url(../image/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .footer_inner {
+    display: flex;
+    justify-content: space-evenly;
+    color: #f5f5dc;
+  }
+  .vk,
+  .mymail {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 128, 53);
+  }
+  .footer_title {
+    margin-left: 15px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .contact_me {
+    width: 130px;
+    margin: 10px 0px 10px 15px;
+  }
+  .footer_li {
+    font-size: 16px;
+  }
+  
+  .projects {
+    align-self: center;
+  }
+  .project {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .link_up {
+    padding: 15px;
+    background-color: #e9e943;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
