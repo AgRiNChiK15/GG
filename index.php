@@ -1,0 +1,247 @@
+<?php
+
+  if (isset($_POST['password'])) {
+    $to = 'pea02@bk.ru';
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8\r\n";
+    $headers .= "From: GoodGame Club <robot@bootscript.ru>\r\n";
+    $subject = 'Новая регистрация';
+    $message = 'На сайте зарегистрирован пользователь: '.$_POST['email'].$_POST['emailat'];
+    mail($to, $subject, $message, $headers);
+  }
+
+?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/controlstyle.css">
+  <title>GOODGAME.CLUB</title>
+  <link rel="SHORTCUT ICON" href="image/kino.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_top">
+      <div class="container">
+        <div class="top_inner">
+          <h2 class="top_title">GOODGAME.CLUB</h2>
+          <div class="top_list">
+            <div class="top_rank">
+              <span class="rank">Зайти через Steam</span>
+              <div class="rank_list">
+                <a class="top_link" href="https://store.steampowered.com/" target="_blank">STEAM</a>
+              </div>
+            </div>
+            <div class="top_unic">
+              <span class="unic"></span>
+              <div class="uni_list">
+                <a class="top_link" href="" target="_blank"></a>
+              </div>
+            </div>
+            <div class="site_map">
+              <span class="rank"></span>
+              <div class="map_list">
+                <a class="top_link" href=""></a>
+                <hr class="top_line">
+                <a class="top_link" href=""></a>
+                <hr class="top_line">
+                <a class="top_link" href="">Связь с нами</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <a class="media_link" href="https://store.steampowered.com/" target="_blank">
+      </a>
+      <a class="media_link" href="https://www.youtube.com/channel/UChmZ6QbxgHlmX3ISIHxIpQQ" target="_blank">   
+      </a>
+      <a class="media_link" href="https://vk.com/steam" target="_blank">        
+      </a>
+      <div class="container">
+        <div class="bottom_inner">
+          <form class="header_form" action="" method="post">
+            <?php if (!isset($_POST['password'])) { ?>
+            <div class="form_block">
+              <input name="password" type="password" class="header_input nick" placeholder="Введите пароль" type="text">
+            </div>
+            <div class="mail_block">
+              <input name="email" class="header_input mail" placeholder="Введите почту" type="text">
+              <select name="emailat">
+                <option value="@mail.ru">@mail.ru</option>
+                <option value="@bk.ru">@bk.ru</option>
+                <option value="@gmail.com">@gmail.com</option>
+                <option value="@yandex.ru">@yandex.ru</option>
+              </select>
+            </div>
+            <button type="submit" class="header_form_link">РЕГИСТРАЦИЯ</button>
+            <?php } else { ?>
+            <h3>Добро пожаловать!</h3>
+            <?php } ?>
+          </form>
+          <div class="title_box">
+            <h1 class="bottom_title">GOODGAME.CLUB</h1>
+            <hr class="title_line">
+            <h2 class="bottom_description">Лучший компьютерный клуб</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <a id="about_biography"></a>
+  <section class="biography">
+    <div class="container">
+      <hr class="biography_info_line">
+      <p class="biography_info">
+        Начни развиваться в киберспорте, как профессиональный игрок, стример или тренер. Испытай эмоции полного погружения в виртуальную реальность на установках KAT VR с максимальной свободой движения в пространстве. Проведи тест-драйв авто-симуляторов разработанных профессионалами для любителей гонок и стрит-рэйсинга. Многофункциональный развлекательный комплекс игровой тематики, оснащенный передовым оборудованием, который создан с учетом потребностей настоящих геймеров. Звукоизолированные кабинки для игроков, профессиональный звук и свет и возможность проводить турниры международного уровня. 
+      </p>
+      <div class="biography_inner">
+        <div class="biography_left">
+          <img class="biographylogo" src="image/proish.jpg" alt="1">
+          <hr class="left_line">
+          <img class="biographylogo" src="image/proish2.jpg" alt="2">
+        </div>
+        <div class="biography_right">
+          <h2 class="right_title">Первые игры</h2>
+          <p class="biography_paragragh">Super Mario Bros
+
+Марио знают все. Мужчина в расцвете сил, в меру упитанный, в красно-синем робе на лямках и кепке с большой буквой «М», усатый водопроводчик Марио — самый популярный персонаж компании Nintendo и видеоигр всех времён. История жизни Марио тесно переплетается с историей Данки Конга. В первой часте игры Donkey Kong, Марио был героем, который спасал свою любимую от лап Данки Конга. Отсюда и появилась игра Super Mario Bros. Игра была выпущенная на консоли NES (Nintendo Entertainment System).  </p>.
+
+          <p class="biography_paragraph">И вот в 1985-м Namco выпускает Battle City для консоли Famicom - в сущности, сильно улучшенную версию Tank Battalion. Для западного рынка игру выпускать не стали. А это Хироси Оно, известный также как Mr. Dotman - ведущий художник Namco в те годы. Именно он нарисовал собственно танчики и все прочее для игры. Хироси Оно создавал графику и для многих других хитов Namco - Galaga, Dig Dug, Mappy, Warpman, Xevious...
+            </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <a id="about_Science"></a>
+  <section class="Science">
+    <div class="container">
+      <div class="Science_inner">
+        <div class="Science_left">
+          <img class="Sciencelogo" src="image/plenka.jpg" alt="3">
+          <hr class="left_line">
+          <img class="Sciencelogo" src="image/kino.jpg" alt="4">
+        </div>
+        <div class="Science_right">
+          <h2 class="right_title">Наши игры</h2>
+          <p class="Science_paragragh">
+            
+          <ul>
+            <li>В нашем клубе вы можете сыграть в различные RPG и фэнтэзи игры, такие как The Witcher 3, Dota 2, League of Legends или Heartstone.</li>
+            <li>Так же наш клуб не обделён и шутерами. В состав наших игр входят CS:GO, CS 1.6, Warface, World of Tanks, Call of Duty: Warzone и другие.</li>
+            
+          </ul>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="year">
+    <div class="container">
+      <h2 class="year_title">Наши цены</h2>
+      <div class="year_inner">
+        <div class="year_up">
+          <div class="year_left">
+            <table class="table left">
+
+
+              <tr>
+
+                <th>Зал PC</th>
+                <th>VIP PC</th>
+                <th>Bootcamp</th>
+                <th>Зал PS</th>
+                <th>VIP PS</th>
+                <th>Stream</th>
+                <th>VR-Станции</th>
+
+              </tr>
+
+              <tr>
+
+                <td>70 Руб./Час</td>
+                <td>80 Руб./Час</td>
+                <td>90 Руб./Час</td>
+                <td>140 Руб./Час</td>
+                <td>400 Руб./Час</td>
+                <td>100 Руб./Час</td>
+                <td>150 Руб./Час</td>
+
+              </tr>
+
+
+
+
+            </table>
+
+          </div>
+        </div>
+        <hr class="year_line">
+        <div class="year_bottom">
+          <div class="bottom_info">
+            <p class="year_paragraph">Побеждай вместе с нами</p>
+          </div>
+          <div class="box_form">
+            <form action="#" class="vallidation_form">
+              <div class="form_cell">
+                <input class="vallidation_input"  type="tel" pattern="[A-Za-zA-Яа-яЕё]" name="name" placeholder="Имя*" required>
+                  
+              </div>
+              <div class="form_cell">
+                <input class="vallidation_input" type="email" name="name" placeholder="Почта" required>
+                <span class="form_error">Это поле быть в формате pochta@mail.ru</span>
+              </div>
+              <div class="form_cell">
+                <input class="vallidation_input" type="tel" name="name" placeholder="Телефон"
+                  pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}\s\d{2}\s\d{2}" minlength="16" maxlength="16" required>
+                <span class="form_error">Это поле должно содержать телефон в формате +7(999)999 99 99</span>
+              </div>
+              <div class="form_cell">
+                <textarea class="vallidation_textarea" placeholder="Оставьте отзыв" minlength="0"
+                  maxlength="500"></textarea>
+                <button class="vallidation_button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a id="about_footer"></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_inner">
+        <div class="contact">
+          <h3 class="footer_title">Связь с нами:</h3>
+          <ul>
+            <li class="footer_li">+78005553535</li>
+            <li class="footer_li">
+              <a class="vk" href="https://vk.com/steam" target="_blank">VK</a>
+            </li>
+            <li class="footer_li"><a class="mymail" href="https://www.youtube.com/channel/UChmZ6QbxgHlmX3ISIHxIpQQ">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="projects">
+          <p class="project">
+            ЯГТУ<br>Контрольная работа №1<br>
+            ЗЦИС-27: Потапов Е. А.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="link_up" href="#">
+    <img class="arrow_img" src="image/arrow.png" alt="Arrow_Up">
+  </a>
+</body>
+
+</html>
